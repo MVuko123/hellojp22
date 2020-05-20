@@ -30,3 +30,56 @@ create table ostavljena(
    priputa datetime,
    carape varchar(41) not null
 );
+
+create table mladic(
+   sifra int not null primary key auto_increment,
+   prstena int not null,
+   maraka decimal(15,9) not null,
+   suknja varchar(30),
+   narukvica int not null,
+   ostavljena int not null
+);
+
+create table cura(
+   sifra int not null primary key auto_increment,
+   bojakose varchar(36),
+   jmbag char(11) not null,
+   prstena int not null,
+   dukserica varchar(38),
+   mladic int
+);
+
+create table punac(
+   sifra int not null primary key auto_increment,
+   ekstrovento bit not null,
+   vesta varchar(31),
+   asocijalno bit not null,
+   prviputa datetime,
+   eura decimal(15,6) not null,
+   cura int 
+);
+
+create table snasa(
+   sifra int not null primary key auto_increment,
+   eura decimal(14,5),
+   narukvica int,
+   drugiputa datetime not null,
+   carape varchar(41)
+);
+
+create table ostavljena_snasa(
+   sifra int not null primary key auto_increment,
+   ostavljena int not null,
+   snasa int not null
+);
+
+alter table sestra add foreign key (becar) references becar(sifra);
+
+alter table mladic add foreign key (ostavljena) references ostavljena(sifra);
+
+alter table cura add foreign key (mladic) references mladic(sifra);
+
+alter table punac add foreign key (cura) references cura(sifra);
+
+alter table ostavljena_snasa add foreign key (snasa) references snasa(sifra);
+alter table ostavljena_snasa add foreign key (ostavljena) references ostavljena(sifra);

@@ -11,32 +11,17 @@ create table karta(
 
 create table film(
    sifra int not null primary key auto_increment,
-   ime varchar(50) not null,
+   naziv varchar(50) not null,
    redatelj varchar(50) not null,
    godina int not null,
    ocjena int not null
 );
 
-create table hrana(
+create table hrana_pice(
     sifra int not null primary key auto_increment,
     naziv varchar(50) not null,
     cijena int not null,
     kolicina int not null
-);
-
-create table pice(
-    sifra int not null primary key auto_increment,
-    naziv varchar(50) not null,
-    cijena int not null,
-    kolicina int not null
-);
-
-create table djelatnici(
-    sifra int not null primary key auto_increment,
-    ime varchar(50) not null,
-    prezime varchar(50) not null,
-    dob int not null,
-    spol char(1) not null
 );
 
 create table kupac(
@@ -46,10 +31,13 @@ create table kupac(
    nacinplacanja varchar(50) not null,
    rezervacija char(2) not null,
    karta int not null,
-   film int not null,
-   hrana int not null,
-   pice int not null,
-   djelatnica int not null
+   hrana_pice int not null
+);
+
+create table projekcija(
+    sifra int not null,
+    film int not null
+    datum datetime not null
 );
 
 
