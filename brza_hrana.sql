@@ -112,3 +112,9 @@ delete from djelatnici where sifra = 3;
 delete from kupci where sifra = 3;
 
 delete from jela where sifra = 3;
+
+select * from djelatnici;
+
+select a.ime, a.prezime
+from djelatnici a
+inner join prodaja b on a.sifra = b.djelatnici;
