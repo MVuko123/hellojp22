@@ -86,4 +86,4 @@ alter table ostavljena_snasa add foreign key (ostavljena) references ostavljena(
 
 select * from cura;
 insert into cura(sifra, bojakose, jmbag, prstena, dukserica, mladic)
-values(null, 'crna', '')
+values(null)
