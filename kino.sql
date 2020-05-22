@@ -191,40 +191,122 @@ values
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'm', 13, 'Jure', 'Juric');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'z', 14, 'Maja', 'Majic');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'm', 22, 'Mihael', 'Mihic');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'z', 25, 'Mihaela', 'Mihicic');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'm', 16, 'Gabrijel', 'Gabric');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'z', 29, 'Lara', 'Laric');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'm', 65, 'Mato', 'Matic');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'z', 22, 'Marija', 'Maric');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'm', 33, 'Anto', 'Antic');
 
 insert into kupac(sifra , spol , dob , ime , prezime )
 values
-(null, 'm', 17, 'Pero', 'Peric');
+(null, 'z', 38, 'Veronika', 'Veric');
+
+select * from karta;
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 2, 1, 8, 'C');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 37, 3, 2, 1, 'F');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 37, 3, 2, 13, 'D');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
+
+insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
+values
+(null, 22, 1, 1, 5, 'A');
