@@ -419,3 +419,82 @@ values
 
 select * from pojeo_popio;
 
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 4, 1, 17);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 2, 2, 19);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 1, 3, 6);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 3, 4, 8);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 2, 5, 25);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 3, 6, 4);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 6, 7, 1);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 2, 8, 5);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 1, 9, 2);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 3, 10, 3);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 2, 11, 7);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 5, 12, 8);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 4, 13, 16);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 3, 14, 27);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 1, 15, 26);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 4, 16, 21);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 2, 17, 14);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 1, 18, 4);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 2, 19, 18);
+
+insert into pojeo_popio (sifra, kolicina, karta, hrana_pice)
+values
+(null, 4, 20, 24);
