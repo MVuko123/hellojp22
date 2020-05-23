@@ -27,7 +27,7 @@ create table kupac(
 
 create table karta(
     sifra int not null primary key auto_increment,
-    cijena int not null,
+    cijena decimal(18,2) not null,
     kupac int not null,
     projekcija int not null,
     sjedalo int not null,
@@ -37,7 +37,7 @@ create table karta(
 create table hrana_pice(
     sifra int not null primary key auto_increment,
     naziv varchar(50) not null,
-    cijena int not null
+    cijena decimal(18,2) not null
 );
 
 create table pojeo_popio(
@@ -236,27 +236,27 @@ values
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 37, 3, 2, 1, 'F');
+(null, 37.50, 3, 2, 1, 'F');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 37, 4, 2, 13, 'D');
+(null, 37.50, 4, 2, 13, 'D');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 43, 5, 3, 22, 'H');
+(null, 43.20, 5, 3, 22, 'H');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 43, 6, 3, 6, 'G');
+(null, 43.20, 6, 3, 6, 'G');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 10, 7, 4, 8, 'I');
+(null, 10.70, 7, 4, 8, 'I');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 10, 8, 4, 19, 'J');
+(null, 10.70, 8, 4, 19, 'J');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
@@ -276,11 +276,11 @@ values
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 35, 13, 7, 9, 'G');
+(null, 35.50, 13, 7, 9, 'G');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 35, 14, 7, 16, 'C');
+(null, 35.50, 14, 7, 16, 'C');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
@@ -300,10 +300,122 @@ values
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 38, 19, 10, 6, 'A');
+(null, 38.20, 19, 10, 6, 'A');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 38, 20, 10, 20, 'G');
+(null, 38.20, 20, 10, 20, 'G');
 
+
+select * from hrana_pice;
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Male Kokice', 13.50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednje Kokice', 19);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Velike Kokice', 24);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Mali Nachosi', 22.70);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednji Nachosi', 30);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Velik Nachosi', 38.50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Mali Sok', 12);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednji Sok', 17.50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Veliki Sok', 23);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Male Kokice i Mali Sok', 23);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Male Kokice i Srednji Sok', 28);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Male Kokice i Veliki Sok', 33);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednje Kokice i Mali Sok', 29);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednje Kokice i Srednji Sok', 33.50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednje Kokice i Veliki Sok', 39);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Velike Kokice i Mali Sok', 34);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Velike Kokice i Srednji Sok', 38.50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Velike Kokice i Veliki Sok', 44);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Mali Nachosi i Mali Sok', 33);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Mali Nachosi i Srednji Sok', 37.50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Mali Nachosi i Veliki Sok', 43);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednji Nachosi i Mali Sok', 40);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednji Nachosi i Srednji Sok', 44.50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Srednji Nachosi i Veliki Sok', 50);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Veliki Nachosi i Mali Sok', 47);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Veliki Nachosi i Srednji Sok', 53);
+
+insert into hrana_pice (sifra, naziv, cijena)
+values
+(null, 'Veliki Nachosi i Veliki Sok', 59);
+
+select * from pojeo_popio;
 
