@@ -7,7 +7,7 @@ create table film(
    naziv varchar(50) not null,
    redatelj varchar(50) not null,
    godina int not null,
-   ocjena int not null
+   ocjena decimal(18,2) not null
 );
 
 create table projekcija(
@@ -142,11 +142,6 @@ insert into projekcija(sifra, film, datum)
 values
 (null, 10, '2020-02-25');
 
-insert into projekcija(sifra, film, datum)
-values
-(null, 1, '2020-01-22');
-
-
 select * from kupac;
 
 insert into kupac(sifra , spol , dob , ime , prezime )
@@ -245,68 +240,70 @@ values
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 37, 3, 2, 13, 'D');
+(null, 37, 4, 2, 13, 'D');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 43, 5, 3, 22, 'H');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 43, 6, 3, 6, 'G');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 10, 7, 4, 8, 'I');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 10, 8, 4, 19, 'J');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 34, 9, 5, 14, 'B');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 34, 10, 5, 5, 'K');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 26, 11, 6, 15, 'D');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 26, 12, 6, 3, 'A');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 35, 13, 7, 9, 'G');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 35, 14, 7, 16, 'C');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 52, 15, 8, 8, 'E');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 52, 16, 8, 16, 'F');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 20, 17, 9, 15, 'H');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 20, 18, 9, 7, 'D');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 38, 19, 10, 6, 'A');
 
 insert into karta(sifra, cijena, kupac, projekcija, sjedalo, red)
 values
-(null, 22, 1, 1, 5, 'A');
+(null, 38, 20, 10, 20, 'G');
+
+
