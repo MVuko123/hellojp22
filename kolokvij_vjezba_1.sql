@@ -84,6 +84,16 @@ alter table punac add foreign key (cura) references cura(sifra);
 alter table ostavljena_snasa add foreign key (snasa) references snasa(sifra);
 alter table ostavljena_snasa add foreign key (ostavljena) references ostavljena(sifra);
 
+select * from ostavljena;
+
+
+select * from mladic;
+
+
+
 select * from cura;
-insert into cura(sifra, bojakose, jmbag, prstena, dukserica, mladic)
-values(null)
+
+
+select * from snasa;
+
+select * from ostavljena_snasa;
