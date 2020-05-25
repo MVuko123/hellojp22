@@ -102,6 +102,14 @@ insert into mladic(sifra, prstena, maraka, suknja, narukvica, ostavljena)
 values
 (null, 1, 500, 'plava', 1, 1);
 
+insert into mladic(sifra, prstena, maraka, suknja, narukvica, ostavljena)
+values
+(null, 2, 800, 'crna', 2, 2);
+
+insert into mladic(sifra, prstena, maraka, suknja, narukvica, ostavljena)
+values
+(null, 3, 700, 'zuta', 3, 3);
+
 
 select * from cura;
 
