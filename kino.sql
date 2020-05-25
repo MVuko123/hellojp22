@@ -31,7 +31,7 @@ create table karta(
     kupac int not null,
     projekcija int not null,
     sjedalo int not null,
-    red char(1) not null 
+    red varchar(2) not null 
 );
 
 create table hrana_pice(

@@ -85,10 +85,22 @@ alter table ostavljena_snasa add foreign key (snasa) references snasa(sifra);
 alter table ostavljena_snasa add foreign key (ostavljena) references ostavljena(sifra);
 
 select * from ostavljena;
+insert into ostavljena(sifra, jmbag, bojaociju, suknja , bojakose , priputa, carape)
+values
+(null, 'HR349582301', 'smeda', 'plava', 'crna', '2020-03-19', 'zelene');
 
+insert into ostavljena(sifra, jmbag, bojaociju, suknja , bojakose , priputa, carape)
+values
+(null, 'HR749150285', 'plava', 'crna', 'plava', '2020-02-09', 'bijele');
+
+insert into ostavljena(sifra, jmbag, bojaociju, suknja , bojakose , priputa, carape)
+values
+(null, 'HR748295412', 'zelena', 'zuta', 'smeda', '2020-03-21', 'crne');
 
 select * from mladic;
-
+insert into mladic(sifra, prstena, maraka, suknja, narukvica, ostavljena)
+values
+(null, 1, 500, 'plava', 1, 1);
 
 
 select * from cura;
