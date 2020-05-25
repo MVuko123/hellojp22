@@ -112,8 +112,86 @@ values
 
 
 select * from cura;
+insert into cura(sifra, bojakose, jmbag, prstena, dukserica, mladic)
+values
+(null, 'crna', 'HR847349128', 1, 'siva', 1);
 
+insert into cura(sifra, bojakose, jmbag, prstena, dukserica, mladic)
+values
+(null, 'plava', 'HR283913842', 2, 'roza', 2);
+
+insert into cura(sifra, bojakose, jmbag, prstena, dukserica, mladic)
+values
+(null, 'smeda', 'HR826401923', 3, 'crna', 3);
 
 select * from snasa;
+insert into snasa(sifra, eura, narukvica, drugiputa, carape)
+values
+(null, 170, 1, '2020-04-05', 'bijele');
+
+insert into snasa(sifra, eura, narukvica, drugiputa, carape)
+values
+(null, 250, 2, '2020-04-18', 'crne');
+
+insert into snasa(sifra, eura, narukvica, drugiputa, carape)
+values
+(null, 200, 3, '2020-04-11', 'sive');
 
 select * from ostavljena_snasa;
+insert into ostavljena_snasa(sifra, ostavljena, snasa)
+values
+(null, 1, 1);
+
+insert into ostavljena_snasa(sifra, ostavljena, snasa)
+values
+(null, 2, 2);
+
+insert into ostavljena_snasa(sifra, ostavljena, snasa)
+values
+(null, 3, 3);
+
+select * from becar;
+insert into becar(sifra, drugiputa, carape, bojaociju, haljina)
+values
+(sifra, '2020-04-01', 'bijela', ' smeda', 'crvena');
+
+insert into becar(sifra, drugiputa, carape, bojaociju, haljina)
+values
+(sifra, '2020-04-08', 'crna', ' plava', 'crna');
+
+insert into becar(sifra, drugiputa, carape, bojaociju, haljina)
+values
+(sifra, '2020-04-18', 'siva', ' zelena', 'siva');
+
+select * from punac;
+insert into punac(sifra, ekstrovento, vesta, asocijalno, prviputa , eura, cura)
+values
+(null, 1, 'plava', 1, '2020-01-22', 200, 1);
+
+insert into punac(sifra, ekstrovento, vesta, asocijalno, prviputa , eura, cura)
+values
+(null, 0, 'siva', 0, '2020-01-27', 220, 2);
+
+insert into punac(sifra, ekstrovento, vesta, asocijalno, prviputa , eura, cura)
+values
+(null, 1, 'crvena', 0, '2020-02-12', 250, 3);
+
+
+select * from sestra;
+insert into sestra(sifra, jmbag, hlace, vesta, prviputa , modelnaocala , becar)
+values
+(null, 'HR827301243', 'sive', ' plava', '2020-01-01', 'Adidas', 1);
+
+insert into sestra(sifra, jmbag, hlace, vesta, prviputa , modelnaocala , becar)
+values
+(null, 'HR847294723', 'crne', ' crvena', '2020-01-21', 'Under Armor', 2);
+
+
+insert into sestra(sifra, jmbag, hlace, vesta, prviputa , modelnaocala , becar)
+values
+(null, 'HR738201932', 'plave', ' zuta', '2020-02-02', 'Tom Ford', 3);
+
+update sestra set hlace = 'Osijek';
+update punac set vesta = null where vesta !='AB';
+select suknja from mladic where maraka != 7 or maraka != 11 or maraka != 18 or maraka != 25 or maraka != 40;
+
